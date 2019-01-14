@@ -376,15 +376,68 @@ piece, then put it make together it will make much more sense.
 > steps should someone take or know to improve in this area? Try to teach 3-10
 > points. This is where you really add the value and TEACH! 
 
-1. The slope of a line is the change in the output divided by the change in the input
+1. We can roll down the hill by subtracting the slope. If positive we subtract, if negative we add.
+2. With a non-linear function we can take the derivative and do the same thing.
+3. if there are multiple inputs we can get the slope in each component direction
+4. Because the slope can be very steep, we can shrink it to reduce the step size.
+5. If we chain functions, we can multiply the slopes to get the input's effect on final output.
+
+
+```
+The slope of a line is the change in the output divided by the change in the input dy/dx
+
+If the line is a hill with a positive slope and we want to roll down it, we
+   decrease the x value. The slope is positive we have to change the x in the
+   negative direction and visa versa.
+
+with a non-linear function we have to take the derivative to get the slope,
+   but the same rule still works. If the slope is positive we subtract from x
+   and if negative we add. This rule always allows us to get to the bottom of
+   the hill.
+
+if we chain two functions together we can multiply their derivatives to get
+   the slope or effect that the input has on the final output. the dy/dx is the
+   slope of the output at the given input. Our two functions y1 = x^2 and y2 = y1 * 5.
+   and we want dy2/dx. We can get dy1/dx it is 2x. we can get dy2/dy1 = 5. Then
+   to get dy2/dx = dy1/dx * dy2/dy1. The y1's cancel out and we get dy2/dx. So
+   we have 2x * 5 = 10x. Therefore, if x is 3 the dy2/dx = 10*3 = 30. The slope
+   is positive so if we subtract 30 from x our final output will decrease so
+   let's try. if x = 3, y1 = 3^2 = 9, y2 = 9 * 5 = 45. Now if we subtract 30
+   x = 3 - 30 = -27. y1 = (-27)^2 = 729. y2 = 729 * 5 = 3645. That's not
+   smaller What gives. 
+
+We can introduce a constant number that shrinks the amount we modify x by
+   each time so that we don't make such a big jump. This is called a learning
+   rate and it's a number we can pick arbitrarily or we can modify it as we go.
+   Trying the example again
+ ```
+
 
 
 > Now that the student knows the steps or important concepts, what are the Do’s
 > and Don’ts they should be aware of? 
 
+Dos
+- see if you can build a NN on your own first, it's very eye opening
+
+Don'ts
+- think you need to master calculus, All of this is done for you when you get into the libraries
+- Start using the library right away, try to get it working on your own first
+
 
 > where might they screw up, get lost, or be disappointed, and how can they
 > deal with that well? 
+
+- We're talking about multivariate calculus here, IT's NOT EASY. Give your
+  brain time to soak it up and don't worry if it takes a while. It literally
+  took me months to really get this stuff down.
+- There are entire courses on this type of math so please don't worry if it
+  doesn't make sense right away. Just trust in yourself, stay curious and keep
+  digging!
+- If all these concepts so far seem disconnected please stick with me. The last
+  two modules are where everything really ties together.
+- If this really isn't clicking with you or just seems intimidating, don't
+  worry most of this is done for you.
 
 
 ## Video #3
@@ -393,20 +446,83 @@ piece, then put it make together it will make much more sense.
 > greater marketplace - that really illustrates what you’ve been teaching in
 > this module? 
 
+So why do we need all this math? The layers and the cost are composed
+functions. In other words the input to the cost is the output of all the
+layers. The input to each layer is the output from the previous layer. So we're
+chaining all the functions together. By taking their derivative we can figure
+out how to change our network weights so as to perform gradient descent on the
+cost function. In other words, it tells us how to change the weights to lower
+the overall cost and make our network better. Using the chain rule for each of
+the layers and their weights gives us the value to change them by.
 
 > Tell the story, and give some teaching points. What is a download or a tool
 > that could help your student better understand or implement your idea? (For
 > example, this download is a tool that is helping you implement what Brendon
 > taught about online courses in this module). 
 
+- watch 3blue1brown visualizing the chain rule or the entire essence of calculus playlist 
+- python notebook doing GD with linear regression
 
 > What cheerleading or parting words of advice and encouragement can you give
 > at the end of this video? (Also, don’t forget to ask your student’s to
 > participate by commenting or asking questions on the video).
 
+You have made it over half way through the course that is amazing! Like I
+mentioned before please keep going everything will start tying together in the
+next two modules. I applaud you for getting through this module. This stuff can
+be very abstract and takes a while to wrap your head around, but you pushed
+through it. I'm so excited that you want to continue on this journey and really
+understand modern ai and deep learning because it is so damn exciting!
+
 
 # Module 4 Backpropagation
 
+
+
+## Video #1
+
+> Introducing the Module What’s the topic of this video and where does it fit
+> in within the overall training? 
+
+This module covers Backpropagation. 
+- applying gradient descent to NN's
+- layers, activation functions, and final cost function are links in the chain of chain rule
+- the multiple dimensions that define the surface of our gradients are the outputs of NN
+
+
+> Why is this topic important to your student’s overall life, career, health,
+> relationship, and our greater society? 
+
+- Once you understand this you will understand how NN's learn. The last module is how to make it better.
+- Back prop was the key innovation that allowed ai to explode into popularity and become a feasible solution for many problems.
+
+
+> What’s a personal story that illustrates this topic and the struggles you’ve
+> faced dealing with it? What mindset helped you deal with it? 
+
+
+I remember trying to work out the derivations for the back prop equations and
+getting stuck for 2 days. Finally I realized that 1. this is just chain rule
+and 2. In order to move the derivative backwards the weights are the derivative
+of the weighted input function with respect to the activations from the
+previous layer.
+
+- When you go through this module keep the last one in mind. Thinking about the NN as a simple chain of operations really simplifies this process.
+- Also remember the hill rolling analogy. We have a hill (hyperplane) that we're trying to get to the bottom of
+
+
+> What are the goals of this module? 
+
+
+> What do you want the student to think, do and setup as a habit by the end of
+> the module? 
+
+
+## Video #2
+
+> Teaching Your Content/Framework/Steps What specific concepts, takeaways, or
+> steps should someone take or know to improve in this area? Try to teach 3-10
+> points. This is where you really add the value and TEACH! 
 
 2. plot a complicated function like y = 1/2 * ( $100,000 - (x/5) )^2 we can decompose it by
    feeding the output of one part into the input of the next. If we break this
@@ -444,3 +560,31 @@ piece, then put it make together it will make much more sense.
    descent. So what changes can we make to y1 to affect its output. We can
    change the value we multiple by x (the number of rooms).
 7. How do we change the value to lower the cost function? 
+
+> Now that the student knows the steps or important concepts, what are the Do’s
+> and Don’ts they should be aware of? 
+
+
+> where might they screw up, get lost, or be disappointed, and how can they
+> deal with that well? 
+
+
+## Video #3
+
+> Case Study What is a case study - about you, one of your students, or in the
+> greater marketplace - that really illustrates what you’ve been teaching in
+> this module? 
+
+
+> Tell the story, and give some teaching points. What is a download or a tool
+> that could help your student better understand or implement your idea? (For
+> example, this download is a tool that is helping you implement what Brendon
+> taught about online courses in this module). 
+
+
+> What cheerleading or parting words of advice and encouragement can you give
+> at the end of this video? (Also, don’t forget to ask your student’s to
+> participate by commenting or asking questions on the video).
+
+
+
