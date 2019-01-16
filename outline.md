@@ -3,17 +3,17 @@
 ## Video #1
 
 > Introducing the Module What’s the topic of this video and where does it fit
-> in within the overall training? 
+> in within the overall training?
 
 A neural net is built up of a bunch of neurons connected. The idea is that the
 neuron itself isn’t really what’s important, but rather the connections between
 them. A neuron is basically a gate that combines a bunch of inputs and passes
-along a single value. 
+along a single value.
 
 Once we understand the neuron, we can connect them together into our network.
 
 > Why is this topic important to your student’s overall life, career, health,
-> relationship, and our greater society? 
+> relationship, and our greater society?
 
 - It is used in all modern ML
 - understanding our brains can help cure disease.
@@ -24,7 +24,7 @@ Once we understand the neuron, we can connect them together into our network.
   NN’s
 
 > What’s a personal story that illustrates this topic and the struggles you’ve
-> faced dealing with it? What mindset helped you deal with it? 
+> faced dealing with it? What mindset helped you deal with it?
 
 Because we’ve given a name to this thing that combines inputs (a neuron) it is
 easy to think that neurons actually exist in a neural network, but they do not!
@@ -37,21 +37,21 @@ values to an answer is by combining the pixel values together. Since the pixel
 values are just numbers, we must use numeric functions to get to the final
 answer. That’s where the neuron comes in
 
-> What are the goals of this module? 
+> What are the goals of this module?
 
 Understand the neuron and the motivation behind choosing to emphasize
-connections rather than rules. Where did the neuron idea start and why? 
+connections rather than rules. Where did the neuron idea start and why?
 
 > What do you want the student to think, do and setup as a habit by the end of
-> the module? 
+> the module?
 
-Always ask why. Tinker a play around, get your hands dirty, and try things out. 
+Always ask why. Tinker a play around, get your hands dirty, and try things out.
 
 ## Video #2
 
 > Teaching Your Content/Framework/Steps What specific concepts, takeaways, or
 > steps should someone take or know to improve in this area? Try to teach 3-10
-> points. This is where you really add the value and TEACH! 
+> points. This is where you really add the value and TEACH!
 
 1.	A Neuron is just a numeric function. It takes in multiple inputs and
     produces a single output, like a real neuron.
@@ -61,13 +61,13 @@ Always ask why. Tinker a play around, get your hands dirty, and try things out.
     value like a house price or conversion rate. When we have an activation
     function we can interpret the output as a probability of something
     happening which is between 0 and 1. Think about the configurable sprayer on
-    a hose attachment or shower head. 
+    a hose attachment or shower head.
 4.	Given a single example, the only thing we can change is the weights or the
     activation function in order to change the output. We change the weights to
-    try to make the output closer to the actual value. 
+    try to make the output closer to the actual value.
 5.	Without an activation function, the output is just a hyper-plane. If we
     just have a single weight and a single input, it’s a line. 2 inputs are a
-    plane. 
+    plane.
 6.	Because one neuron can only produce one output, we must have multiple
     neurons for outputs such as classes where there is one neuron per class.
     For each class the neuron outputs the probability that the input belongs to
@@ -79,7 +79,7 @@ Always ask why. Tinker a play around, get your hands dirty, and try things out.
     (negative weight).
 
 > Now that the student knows the steps or important concepts, what are the Do’s
-> and Don’ts they should be aware of? 
+> and Don’ts they should be aware of?
 
 Dos
 1.	Literally try to implement one yourself
@@ -88,13 +88,13 @@ Dos
     changing the weight values
 
 Don’ts
-1.	worry if you don’t know why this matters yet, we will get there. 2.	
+1.	worry if you don’t know why this matters yet, we will get there. 2.
 2. get discouraged that we're not actually talking about NN's yet, trust me we
    will get there and you will be glad you took the time here
 
 
 > where might they screw up, get lost, or be disappointed, and how can they
-> deal with that well? 
+> deal with that well?
 
 Throughout the course don’t get discouraged by the math. It is very complicated
 and there is a lot going on. It just takes time to digest. It’s like each a ton
@@ -111,10 +111,10 @@ explain.  Honor the struggle and be excited about how amazing this is.
 
 > Case Study What is a case study - about you, one of your students, or in the
 > greater marketplace - that really illustrates what you’ve been teaching in
-> this module? 
+> this module?
 
 Why neurons? What made us think that we should use them for computation and
-where did this idea begin? 
+where did this idea begin?
 -	research from 1870 to 1900 discovered the structure of neurons connected in
   an electrical network
 -	from the 1930-1950 with the advent of digital computers, it  was proposed
@@ -129,7 +129,7 @@ where did this idea begin?
 > Tell the story, and give some teaching points. What is a download or a tool
 > that could help your student better understand or implement your idea? (For
 > example, this download is a tool that is helping you implement what Brendon
-> taught about online courses in this module). 
+> taught about online courses in this module).
 
 python notebook
 
@@ -151,7 +151,7 @@ Exciting journey
 ## Video #1
 
 > Introducing the Module What’s the topic of this video and where does it fit
-> in within the overall training? 
+> in within the overall training?
 
 - made up of a bunch of neurons
 - all deep learning is some kind of NN
@@ -159,7 +159,7 @@ Exciting journey
 - Deep learning does not happen with a single neuron
 
 > Why is this topic important to your student’s overall life, career, health,
-> relationship, and our greater society? 
+> relationship, and our greater society?
 
 - voice recognition, natural language understanding, search, predicting cancer
   all through NN's
@@ -167,26 +167,26 @@ Exciting journey
 - This is how our own brain works
 
 > What’s a personal story that illustrates this topic and the struggles you’ve
-> faced dealing with it? What mindset helped you deal with it? 
+> faced dealing with it? What mindset helped you deal with it?
 
 Understanding how the connection weights turn into a matrix.
 Forward propagation in the context of the whole network
 The fact that getting from the input data to the output prediction is literally
-just multiplying matricies. 
+just multiplying matricies.
 
 Mindset: Everything is just a number and you're just feeding numbers through a
 function to get an output. There is no spoon!
 
-> What are the goals of this module? 
+> What are the goals of this module?
 
 Understand how we can take images and rows of data and transform them into predictions
 using a network of neurons represented as a matrix.
 
 > What do you want the student to think, do and setup as a habit by the end of
-> the module? 
+> the module?
 
 it's just matrix multiplication. With a single example, the only thing that we
-can change are the weights. 
+can change are the weights.
 
 Don't reinvent the wheel. If you look hard enough you can almost always find an
 existing implementation. Again, LOOK FOR A SOLUTION BEFORE YOU DECIDE TO CREATE
@@ -197,7 +197,7 @@ IT YOURSELF.
 
 > Teaching Your Content/Framework/Steps What specific concepts, takeaways, or
 > steps should someone take or know to improve in this area? Try to teach 3-10
-> points. This is where you really add the value and TEACH! 
+> points. This is where you really add the value and TEACH!
 
 1. put all input weights into the neuron in a single list. Use vector dot
    product to multiply all weights by all inputs in one step.
@@ -215,7 +215,7 @@ IT YOURSELF.
 10. deep comes from multiple layers
 
 > Now that the student knows the steps or important concepts, what are the Do’s
-> and Don’ts they should be aware of? 
+> and Don’ts they should be aware of?
 
 Do
 - always question the architecture
@@ -231,7 +231,7 @@ Don't
 
 
 > where might they screw up, get lost, or be disappointed, and how can they
-> deal with that well? 
+> deal with that well?
 
 drown in terminology
 - one piece at a time, one word at a time, repeat
@@ -249,7 +249,7 @@ may all seem too complicated
 ## Video #3
 > Case Study What is a case study - about you, one of your students, or in the
 > greater marketplace - that really illustrates what you’ve been teaching in
-> this module? 
+> this module?
 
 why layers? who came up with them why
 layers are an empirical byproduct. They aren't really required for NNs to work.
@@ -261,18 +261,18 @@ then entire words. Layers then are proposed to accomplish these tasks
 sequentially.
 
 more layers = less linearity. i.e. More complex relationships between input and
-output. 
+output.
 
 if we're trying to recognize a handwritten digit 0-9 there are many conditions
 involved. First if someone writes anything then there should be some lines.
 Next those lines need to be arranged in very specific ways. For example, to
-identify a 6 the conditions might be 
+identify a 6 the conditions might be
 
-1. are there lines 
-2. are there lines in a circle 
-3. are the circular lines near the bottom 
-4. do the circular lines at the bottom have another line coming off 
-5. is the line coming off of the left side of the circle 
+1. are there lines
+2. are there lines in a circle
+3. are the circular lines near the bottom
+4. do the circular lines at the bottom have another line coming off
+5. is the line coming off of the left side of the circle
 6. is the line coming off going up (not down)
 
 These conditions are all composed together and can be organized in a hierarchy.
@@ -281,7 +281,7 @@ This is the intuitive reason for layers
 > Tell the story, and give some teaching points. What is a download or a tool
 > that could help your student better understand or implement your idea? (For
 > example, this download is a tool that is helping you implement what Brendon
-> taught about online courses in this module). 
+> taught about online courses in this module).
 
 python notebook
 
@@ -291,7 +291,7 @@ python notebook
 
 That is the structure! You now know how AI is built! Next we will get into how it learns.
 You are well on your way to understanding what I believe to be one of the most amazing innovations of our time.
-If you've gotten this far that means you're really interested and want to learn and that is amazing. 
+If you've gotten this far that means you're really interested and want to learn and that is amazing.
 You want to be on the cutting edge of what tech can do and I celebrate you for that!
 
 
@@ -306,7 +306,7 @@ neural network to do it. I can't wait to see what you come up with!
 ## Video #1
 
 > Introducing the Module What’s the topic of this video and where does it fit
-> in within the overall training? 
+> in within the overall training?
 
 This is how the networks actually LEARN. This process is what allows us to find
 connections between neurons that are optimal for the given task. It is
@@ -316,7 +316,7 @@ error that our network makes, then we continue in the same direction.
 
 
 > Why is this topic important to your student’s overall life, career, health,
-> relationship, and our greater society? 
+> relationship, and our greater society?
 
 Gradient descent can be applied to any machine learning algorithm not just
 neural networks. It is an automatic process that allows our predictor to figure
@@ -338,7 +338,7 @@ mess of other awesome stuff.
 
 
 > What’s a personal story that illustrates this topic and the struggles you’ve
-> faced dealing with it? What mindset helped you deal with it? 
+> faced dealing with it? What mindset helped you deal with it?
 
 This is where the course really goes deep and becomes more challenging. But,
 stick with me and we'll get a feel for why this works not just a formula! This
@@ -351,7 +351,7 @@ exist. The thing that kept me going through all of it was my inspiration.
 Seeing what deep learning is capable of lit a fire inside me and I hope it will
 for you too.
 
-> What are the goals of this module? 
+> What are the goals of this module?
 
 By the end of this module you will understand how to find the optimal solution
 to a problem with a quantitative measure by defining a cost. You will
@@ -360,7 +360,7 @@ down a hill.
 
 
 > What do you want the student to think, do and setup as a habit by the end of
-> the module? 
+> the module?
 
 The problem can always be broken down. We can disassemble functions into
 simpler and simpler parts like legos. Always try to simplify the problem until
@@ -374,7 +374,7 @@ piece, then put it make together it will make much more sense.
 
 > Teaching Your Content/Framework/Steps What specific concepts, takeaways, or
 > steps should someone take or know to improve in this area? Try to teach 3-10
-> points. This is where you really add the value and TEACH! 
+> points. This is where you really add the value and TEACH!
 
 1. We can roll down the hill by subtracting the slope. If positive we subtract, if negative we add.
 2. With a non-linear function we can take the derivative and do the same thing.
@@ -404,7 +404,7 @@ if we chain two functions together we can multiply their derivatives to get
    is positive so if we subtract 30 from x our final output will decrease so
    let's try. if x = 3, y1 = 3^2 = 9, y2 = 9 * 5 = 45. Now if we subtract 30
    x = 3 - 30 = -27. y1 = (-27)^2 = 729. y2 = 729 * 5 = 3645. That's not
-   smaller What gives. 
+   smaller What gives.
 
 We can introduce a constant number that shrinks the amount we modify x by
    each time so that we don't make such a big jump. This is called a learning
@@ -415,7 +415,7 @@ We can introduce a constant number that shrinks the amount we modify x by
 
 
 > Now that the student knows the steps or important concepts, what are the Do’s
-> and Don’ts they should be aware of? 
+> and Don’ts they should be aware of?
 
 Dos
 - see if you can build a NN on your own first, it's very eye opening
@@ -426,7 +426,7 @@ Don'ts
 
 
 > where might they screw up, get lost, or be disappointed, and how can they
-> deal with that well? 
+> deal with that well?
 
 - We're talking about multivariate calculus here, IT's NOT EASY. Give your
   brain time to soak it up and don't worry if it takes a while. It literally
@@ -444,7 +444,7 @@ Don'ts
 
 > Case Study What is a case study - about you, one of your students, or in the
 > greater marketplace - that really illustrates what you’ve been teaching in
-> this module? 
+> this module?
 
 So why do we need all this math? The layers and the cost are composed
 functions. In other words the input to the cost is the output of all the
@@ -458,9 +458,9 @@ the layers and their weights gives us the value to change them by.
 > Tell the story, and give some teaching points. What is a download or a tool
 > that could help your student better understand or implement your idea? (For
 > example, this download is a tool that is helping you implement what Brendon
-> taught about online courses in this module). 
+> taught about online courses in this module).
 
-- watch 3blue1brown visualizing the chain rule or the entire essence of calculus playlist 
+- watch 3blue1brown visualizing the chain rule or the entire essence of calculus playlist
 - python notebook doing GD with linear regression
 
 > What cheerleading or parting words of advice and encouragement can you give
@@ -477,109 +477,214 @@ understand modern ai and deep learning because it is so damn exciting!
 
 # Module 4 Backpropagation
 
-
-
 ## Video #1
 
 > Introducing the Module What’s the topic of this video and where does it fit
-> in within the overall training? 
+> in within the overall training?
 
-This module covers Backpropagation. 
+This module covers Backpropagation.
 - applying gradient descent to NN's
 - layers, activation functions, and final cost function are links in the chain of chain rule
 - the multiple dimensions that define the surface of our gradients are the outputs of NN
 
 
 > Why is this topic important to your student’s overall life, career, health,
-> relationship, and our greater society? 
+> relationship, and our greater society?
 
 - Once you understand this you will understand how NN's learn. The last module is how to make it better.
 - Back prop was the key innovation that allowed ai to explode into popularity and become a feasible solution for many problems.
 
 
 > What’s a personal story that illustrates this topic and the struggles you’ve
-> faced dealing with it? What mindset helped you deal with it? 
+> faced dealing with it? What mindset helped you deal with it?
 
 
 I remember trying to work out the derivations for the back prop equations and
-getting stuck for 2 days. Finally I realized that 1. this is just chain rule
-and 2. In order to move the derivative backwards the weights are the derivative
-of the weighted input function with respect to the activations from the
-previous layer.
+getting stuck for 2 days. Finally I realized that this is just chain rule
+
+
+> What are the goals of this module?
+
+Understand how each weight is updated to ultimately lower the final cost and make the network more accurate
+
+> What do you want the student to think, do and setup as a habit by the end of
+> the module?
 
 - When you go through this module keep the last one in mind. Thinking about the NN as a simple chain of operations really simplifies this process.
 - Also remember the hill rolling analogy. We have a hill (hyperplane) that we're trying to get to the bottom of
-
-
-> What are the goals of this module? 
-
-
-> What do you want the student to think, do and setup as a habit by the end of
-> the module? 
 
 
 ## Video #2
 
 > Teaching Your Content/Framework/Steps What specific concepts, takeaways, or
 > steps should someone take or know to improve in this area? Try to teach 3-10
-> points. This is where you really add the value and TEACH! 
+> points. This is where you really add the value and TEACH!
 
-2. plot a complicated function like y = 1/2 * ( $100,000 - (x/5) )^2 we can decompose it by
-   feeding the output of one part into the input of the next. If we break this
-   into 3 separation functions it would look like this. y1 = x/5, y2 = $100,000 - y1, y3 = 1/2 * y2^2
-3. we chained the functions together to create the final. This why we have
-   something called the chain rule. 
-4. We can plot each sub function and look at their slopes. If the slope is the
-   change in output divided by the change in input we can write it like this dy/dx.
-   d just stands for delta or change. 
-5. we have this big giant function at the top, let's say this defines our cost
-   or how wrong we are. What do we mean by wrong? Let's say we're talking about
-   houses. We want to build a function that can take in the number of rooms in
-   a house and give us back the price. We have a bunch of examples of houses
-   with their corresponding price and number of rooms, but we don't have a way
-   to take in a new house we've never seen before and try to predict it's
-   price. In other words a new house has just been built. We know the number of
-   rooms, but not what the price should be. So how can we come up with
-   something that will be able to predict the price of a house well? This is
-   where gradient descent comes in. So what does the big function above tell us? 
-   It will give us a number that represents how wrong our house price predictor
-   is. In other words it will tell us how different the price our function
-   predicted is from the actual price of $100,000. This means that y1 is our
-   predictor. In other words y1 is the function that will ultimately take in
-   the number of room and give back a house price. The rest of the math is to
-   tell us how wrong we are.
-6. If y1 is our predictor then that is the thing we really want to change. In
-   other words the changes we make to y1 ultimately affect how good our
-   function is at predicting house prices. Therefore, we need to know how to
-   change y1 so that we lower the cost, making it 'more correct.' We know our
-   goal is to lower the cost because if we do that then our function will be
-   giving us answers that are as close as possible to the correct answers. We
-   can plot our cost function and see where the lowest point is. On the
-   function curve this means we want to go down the slopes just like a ball
-   rolling down a hill to get to the lowest point. Hence the name gradient
-   descent. So what changes can we make to y1 to affect its output. We can
-   change the value we multiple by x (the number of rooms).
-7. How do we change the value to lower the cost function? 
+1. build up the chain z = wx + b, a = sigma(z), C = 1/2(y - a)^2
+2. with one layer determine the effect the weights have on each step. dz/dw = x
+   (input), da/dz = signa'(z), dC/da = a - y. Therefore, chain 1 and 2 we get
+   da/dw = dz/dw * da/dz which tells us the effect that the weights have on the
+   output of the activation function. chaining 1 2 and 3 together dC/dw = dz/dw
+   * da/dz * dC/da
+3. With more than one layer we have to add an extra term dz/da. In other words,
+   for any layer that takes in input from a previous one, what is the effect
+   that the output of that previous layer has on the output of this layer. In
+   the first layer (the only layer when we have one) the "activations" in the
+   term dz/da are just the actual input which is why we don't need the term
+   with only one layer. Now the expression is
+
+               layer k          layer (k+1) - n    final output cost
+   dC/dw = (dz/dw * da/dz) *    (dz/da * da/dz)        * dC/da
+
+   you can see that the numerator and denominator in layers k through n cancel.
+   This allows us to compute the gradient (slope) for every weight in the
+   network which tells us how much to change the weight by in order to make the
+   cost lower (roll down the hill).
+4. We can find the gradients for every layer
+   Multiply by learning rate to prevent rolling way past min
+   subtract from weights to go down (add would be up) hill
+   repeat for next input
 
 > Now that the student knows the steps or important concepts, what are the Do’s
-> and Don’ts they should be aware of? 
+> and Don’ts they should be aware of?
 
+Dos
+- if you didn't go through the notebooks on the other modules please, please do
+  this one! This wont really click unless you do it yourself
+- Look up some videos. Again 3blue1brown has a great series called deep
+  learning that I highly recommend. There are others as well. The more ways you
+  hear it explained the more it will click.
+
+Don'ts
+-
 
 > where might they screw up, get lost, or be disappointed, and how can they
-> deal with that well? 
+> deal with that well?
+
+As with other videos give yourself TIME!!! can't stress enough
+I always say, if something doesn't make sense, look at it again tomorrow
 
 
 ## Video #3
 
 > Case Study What is a case study - about you, one of your students, or in the
 > greater marketplace - that really illustrates what you’ve been teaching in
-> this module? 
+> this module?
+
+save for after free
+
+why?
+This is just gradient descent for the network.
 
 
 > Tell the story, and give some teaching points. What is a download or a tool
 > that could help your student better understand or implement your idea? (For
 > example, this download is a tool that is helping you implement what Brendon
-> taught about online courses in this module). 
+> taught about online courses in this module).
+
+python notebook
+
+
+> What cheerleading or parting words of advice and encouragement can you give
+> at the end of this video? (Also, don’t forget to ask your student’s to
+> participate by commenting or asking questions on the video).
+
+It is really incredible that you made it this far. I think most people would
+have been so intimidated by the math that they would've stopped. BUT NOT YOU.
+I'm so exited that you are just as interested in this as I am. You're in the
+home stretch don't drop now! At this point you probably know more about AI then
+90% of the world. I want to congratulate you and if I was there I would give
+you a GIANT HIGH 5!!!  Keep up the good work!!!
+
+
+
+# Module 5 Training
+
+
+## Video #1
+
+> Introducing the Module What’s the topic of this video and where does it fit
+> in within the overall training?
+
+This module covers training our neural network.
+with out training our network is useless
+this is the teaching process
+
+
+> Why is this topic important to your student’s overall life, career, health,
+> relationship, and our greater society?
+
+Optimizing training decreases the amount of time the network needs to learn
+It can make a network go from days to hours to learn something
+Until training and back propagation were really figured out, NN's were dead in the water
+
+
+> What’s a personal story that illustrates this topic and the struggles you’ve
+> faced dealing with it? What mindset helped you deal with it?
+
+Think of over and under fitting as literal fitting of a shoe
+Over fitting, training, bias, and variance are not specific to neural networks they apply to al ML
+
+> What are the goals of this module?
+
+Understand how different training affects over fitting
+
+> What do you want the student to think, do and setup as a habit by the end of
+> the module?
+
+Anything beyond gradient descent and back prop for one example, stochastic
+gradient descent, normalization, dropout, different cost or activation
+functions are all just to speed up training or reduce over fitting
+
+
+## Video #2
+
+> Teaching Your Content/Framework/Steps What specific concepts, takeaways, or
+> steps should someone take or know to improve in this area? Try to teach 3-10
+> points. This is where you really add the value and TEACH!
+
+1. train test checks generalizability. In other words how well will the model
+   perform on new data
+2. K-fold goes a step further by getting a bunch of generalizability samples
+   and averaging them to give better representation of model performance on new
+   data.
+3. SGD: Take avg of all gradients then subtract
+   Do this for small batch of inputs
+   speeds training because of batch as matrix
+   reduces over fitting because avg is representative of entire batch
+4. normalization reduces over fitting by preventing weights from getting too specialized
+5. different cost functions speed training by preventing shallow gradients
+6. dropout reduces over fitting by preventing neuron specialization
+7. different activation functions speed training by preventing shallow gradients
+
+> Now that the student knows the steps or important concepts, what are the Do’s
+> and Don’ts they should be aware of?
+
+
+Dos
+-
+Dont
+- try out all of these things at once. Start with the simplest model you can.
+  If it doesn't do well, THEN try some of the other methods.
+-
+
+
+
+> where might they screw up, get lost, or be disappointed, and how can they
+> deal with that well?
+
+
+## Video #3
+
+> Case Study What is a case study - about you, one of your students, or in the
+> greater marketplace - that really illustrates what you’ve been teaching in
+> this module?
+
+
+> Tell the story, and give some teaching points. What is a download or a tool
+> that could help your student better understand or implement your idea? (For
+> example, this download is a tool that is helping you implement what Brendon
+> taught about online courses in this module).
 
 
 > What cheerleading or parting words of advice and encouragement can you give
