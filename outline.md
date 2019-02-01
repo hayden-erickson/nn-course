@@ -55,25 +55,24 @@ Always ask why. Tinker a play around, get your hands dirty, and try things out.
 
 1.	A Neuron is just a numeric function. It takes in multiple inputs and
     produces a single output, like a real neuron.
-2.	It may or may not have a bias and an activation function.
-3.	The activation function affects how the output is interpreted. For
+2.	The activation function affects how the output is interpreted. For
     instance, if we have no activation function, the output is a continuous
     value like a house price or conversion rate. When we have an activation
     function we can interpret the output as a probability of something
     happening which is between 0 and 1. Think about the configurable sprayer on
     a hose attachment or shower head.
-4.	Given a single example, the only thing we can change is the weights or the
-    activation function in order to change the output. We change the weights to
-    try to make the output closer to the actual value.
-5.	Without an activation function, the output is just a hyper-plane. If we
+3.	Given a single example, the only thing we can change is the weights,
+    biases, or the activation function in order to change the output. We change
+    the weights or biases to try to make the output closer to the actual value.
+4.	Without an activation function, the output is just a hyper-plane. If we
     just have a single weight and a single input, it’s a line. 2 inputs are a
     plane.
-6.	Because one neuron can only produce one output, we must have multiple
+5.	Because one neuron can only produce one output, we must have multiple
     neurons for outputs such as classes where there is one neuron per class.
     For each class the neuron outputs the probability that the input belongs to
     that class. This is what image classification networks do. (Segway into
     networks).  One neuron per class and they can all be independent
-7.  Each weight is a line, the whole neuron makes a plane. Think of just one
+6.  Each weight is a line, the whole neuron makes a plane. Think of just one
     input column compared to output. As number of rooms goes up, so does house
     price (positive weight). As distance from city goes up, price goes down
     (negative weight).
@@ -85,7 +84,7 @@ Dos
 1.	Literally try to implement one yourself
 2.	Try to connect a bunch together
 3.	See if you can find out how the neuron is similar to linear regression by
-    changing the weight values
+    changing the weight and bias values
 
 Don’ts
 1.	worry if you don’t know why this matters yet, we will get there. 2.
@@ -662,16 +661,27 @@ functions are all just to speed up training or reduce over fitting
 
 
 Dos
--
+- test out each of these methods and see how they speed up training or improve accuracy
 Dont
 - try out all of these things at once. Start with the simplest model you can.
   If it doesn't do well, THEN try some of the other methods.
--
-
-
 
 > where might they screw up, get lost, or be disappointed, and how can they
 > deal with that well?
+
+If you train your network and find that it doesn't get better, don't fret.
+There are a ton of steps and getting all of them right takes some serious
+diligence. Now that you know how it works you can use the libraries as well
+so you probably won't have to perfect the code for this unless you want to.
+
+You'll see a lot of different types of neural networks Convolutional,
+Recurrent, AutoEncoders, LSTM, and many more. Just remember they are all based
+on these ideas, simply structured differently. Recurrent and LSTM NN's are for
+sequences of data like sentences or music. They have connections that loop
+around. This allows them to "remember" what came before. Convolutional NN's are
+for images and work by processing images and at higher and higher levels of
+abstraction.  Like standing with your nose on a painting, then slowly walking
+backwards to see more and more of the big picture.
 
 
 ## Video #3
@@ -679,6 +689,17 @@ Dont
 > Case Study What is a case study - about you, one of your students, or in the
 > greater marketplace - that really illustrates what you’ve been teaching in
 > this module?
+
+Why do we want to reduce over fitting? to work well on new data.
+- the whole point of training is to use on something other than training
+
+Why speed up training? obvious
+
+Just keep these purposes in mind. They are the reason for changing anything
+about the network. If you ever see something like a wacky cost function,
+architecture, activation function, training method, etc. It's either to speed
+up training, make the network generalize better, or deal with different types
+of data like sequences or images.
 
 
 > Tell the story, and give some teaching points. What is a download or a tool
@@ -690,6 +711,12 @@ Dont
 > What cheerleading or parting words of advice and encouragement can you give
 > at the end of this video? (Also, don’t forget to ask your student’s to
 > participate by commenting or asking questions on the video).
+
+You guys are AMAZING!!! Congratulations on completing the last module. You now
+understand the fundamentals of all modern ARTIFICIAL INTELLIGENCE!!! How
+freakin' cool is that??? I celebrate your commitment and dedication and applaud
+you for being brave enough to take on the challenge.
+
 
 
 
