@@ -81,7 +81,7 @@ class Layer:
         self.a = activation_fn
         self.da_dz = None
 
-    def __call__(self, features):
+    def predict(self, features):
         z = self.weights.dot(features) + self.biases
         self.da_dz = self.a(z, derivative=True)
         return self.a(z)
@@ -115,7 +115,7 @@ class Network:
         prediction = x
 
         for l in self.layers:
-            prediction = l(prediction)
+            prediction = l.predict(prediction)
             da_dz.append(l.da_dz)
             dz_dw.append(prediction)
 
