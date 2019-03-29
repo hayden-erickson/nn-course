@@ -81,7 +81,7 @@ class Layer:
         self.a = activation_fn
         self.da_dz = None
 
-    def __call__(self, features):
+    def predict(self, features):
         z = self.weights.dot(features) + self.biases
         self.da_dz = self.a(z, derivative=True)
         return self.a(z)
@@ -115,7 +115,7 @@ class Network:
         prediction = x
 
         for l in self.layers:
-            prediction = l(prediction)
+            prediction = l.predict(prediction)
             da_dz.append(l.da_dz)
             dz_dw.append(prediction)
 
@@ -174,70 +174,6 @@ def linear(z, derivative=False):
 
     return np.ones(shape=z.shape)
 
-
-class Layer:
-    # now we will allow the creation of a layer with the activation function as a parameter
-    # that we we can use softmax or any other function instead of just linear
-    def __init__(self, num_inputs, num_neurons, activation_fn=linear):
-        self.weights = np.random.uniform(-.1, .1,
-                                         size=(num_neurons, num_inputs))
-        self.biases = np.random.uniform(-.1, .1, size=(num_neurons))
-        self.activation = activation_fn
-        self.dz_dw = []
-        self.da_dz = []
-
-    def predict(self, features):
-        z = self.weights.dot(features) + self.biases
-        # here we save the activation function gradient to use later
-        # when we perform gradient descent for the whole network
-        self.da_dz = self.activation(z, derivative=True)
-        self.dz_dw = self.activation(z)
-        return self.dz_dw
-
-
-class Network:
-    def __init__(self, *layers):
-        self.layers = layers
-        self.grad_calls = 0
-        self.dz_dw = []
-        self.da_dz = []
-
-    def get_gradient(self, x, y):
-        # find the gradient for a single example
-        prediction = self.predict(x)
-        dC_da = cost(prediction, y, derivative=True)
-
-        dC_dw = []
-        dC_db = []
-
-        for i in range(1, len(self.layers)+1):
-            # the line below is the only difference from our previous
-            # network. Instead of assuming that da/dz = 1 (which it
-            # does for our linear activation layers) we must use the
-            # gradient for any activation that the layer has. In this
-            # example it is sigmoid for the last layer.
-            dC_dz = dC_da * self.da_dz[-i]
-            dC_dw.insert(0, np.outer(dC_dz, self.dz_dw[-(i+1)]))
-            dC_db.insert(0, dC_dz)
-            dC_da = self.layers[-i].weights.transpose().dot(dC_dz)
-
-        self.grad_calls += 1
-        return dC_dw, dC_db
-
-    def predict(self, x):
-        da_dz = []
-        dz_dw = [x]
-        prediction = x
-
-        for l in self.layers:
-            prediction = l.predict(prediction)
-            da_dz.append(l.da_dz)
-            dz_dw.append(prediction)
-
-        self.da_dz = da_dz
-        self.dz_dw = dz_dw
-
-        return prediction
 
 # label_to_vector takes in a digit lable 0-9
 # and turns it into a vector of probabilities
